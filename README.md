@@ -1,10 +1,17 @@
 # RollingTextView
+[![](https://jitpack.io/v/wing-tree/rolling-text-view.svg)](https://jitpack.io/#wing-tree/rolling-text-view)
 
 RollingTextView works like this:
 
 Only integer types are supported,
-You can set some properties of textview like below.
-
+The following properties are supported.
+```
+<attr name="duration" format="integer" />
+<attr name="android:fontFamily" />
+<attr name="android:textColor" />
+<attr name="android:textSize" />
+<attr name="android:textStyle" />
+```
 **Step 1.** Add it in your root build.gradle at the end of repositories:
 ```
 	allprojects {
