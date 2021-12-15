@@ -2,11 +2,13 @@ package com.wind.orca.pe.rollingtextview
 
 import android.animation.Animator
 import android.content.Context
+import android.content.res.ColorStateList
 import android.util.AttributeSet
 import android.view.Gravity
 import android.view.animation.DecelerateInterpolator
 import android.widget.FrameLayout
 import android.widget.TextView
+import androidx.annotation.ColorInt
 
 class RollingTextView : FrameLayout {
     private lateinit var currentTextView: TextView
@@ -171,5 +173,15 @@ class RollingTextView : FrameLayout {
                 })
                 .start()
         }
+    }
+
+    fun setTextColor(@ColorInt color: Int) {
+        currentTextView.setTextColor(color)
+        nextTextView.setTextColor(color)
+    }
+
+    fun setTextColor(colors: ColorStateList) {
+        currentTextView.setTextColor(colors)
+        nextTextView.setTextColor(colors)
     }
 }
