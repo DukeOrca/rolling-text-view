@@ -1,4 +1,5 @@
 # RollingTextView
+[![](https://jitpack.io/v/wing-tree/rolling-text-view.svg)](https://jitpack.io/#wing-tree/rolling-text-view)
 
 RollingTextView works like this:
 
